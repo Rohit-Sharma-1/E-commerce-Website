@@ -10,6 +10,7 @@ app.use(express.json());
 connectDB();
 
 app.use("/api/auth", authRoutes);
+app.use("/api/products", productRoutes);
 
 
 app.listen(process.env.PORT || 5000, () => console.log("server started"));  
